@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+#header {
+    padding: 40px;
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+#page-content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 9999;
+}
+
+#error {
+	display: none;
+}
+
+#sidebar {
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+#main-content {
+	flex-grow: 9999;
+    padding: 20px;
+}
+
+#current-condition {
+    border: solid thin lightgrey;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+#current-condition .city-name {
+	text-transform: capitalize;
+}
+
+#current-condition h1 {
+    margin-top: 0;
+}
+
+#current-condition div:not(:last-child), .weather-forecast div:not(:last-child) {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#forecast-to-be-cloned {
+	display: none;
+}
+
+#forecast-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.weather-forecast {
+    padding: 20px;
+    margin-right: 10px;
+    background-color: lightblue;
+    border-radius: 6px;
+}
